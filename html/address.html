@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>متجر الكتروني</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/font-electro.css">
+    <link rel="stylesheet" href="../assets/vendor/load-icons.css">
+    <link rel="stylesheet" href="../assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="../assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- CSS Electro Template -->
+    <!-- <link rel="stylesheet" href="../assets/css/theme.css"> -->
+    <link rel="stylesheet" href="../assets/css/theme-rtl.css">
+</head>
+
+<body>
+
+    <div class="overlay-div"></div>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="u-header u-header-left-aligned-nav border-bottom border-color-1">
+        <div class="u-header__section">
+            <!-- Logo-Search-header-icons -->
+            <div class="py-2 py-xl-3 bg-primary bg-xl-transparent">
+                <div class="container">
+                    <div class="row my-0dot5 my-xl-0 align-items-center position-relative">
+                        <!-- Logo-offcanvas-menu -->
+                        <div class="col-auto">
+                            <!-- Nav -->
+                            <nav class="navbar navbar-expand u-header__navbar py-0">
+                                <!-- Fullscreen Toggle Button -->
+                                <button id="sidebarHeaderInvoker" type="button"
+                                    class="navbar-toggler d-block btn u-hamburger mr-3" aria-controls="sidebarHeader"
+                                    aria-haspopup="true" aria-expanded="false" data-unfold-event="click"
+                                    data-unfold-hide-on-scroll="false" data-unfold-target="#sidebarHeader1"
+                                    data-unfold-type="css-animation" data-unfold-animation-in="fadeInRight"
+                                    data-unfold-animation-out="fadeOutRight" data-unfold-duration="500">
+                                    <span id="hamburgerTriggerMenu" class="u-hamburger__box">
+                                        <span class="u-hamburger__inner"></span>
+                                    </span>
+                                </button>
+                                <!-- End Fullscreen Toggle Button -->
+
+                                <!-- Logo -->
+                                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center mr-0"
+                                    href="index.html">
+                                    <img src="../assets/img/logo-icon.png" alt="">
+                                </a>
+                                <!-- End Logo -->
+                            </nav>
+                            <!-- End Nav -->
+                        </div>
+                        <!-- End Logo-offcanvas-menu -->
+                        <!-- Search Bar -->
+                        <div class="col pl-0 d-none d-xl-block">
+                            <form class="js-focus-state">
+                                <label class="sr-only" for="searchproduct">بحث</label>
+                                <div class="input-group">
+                                    <input type="email"
+                                        class="form-control py-2 pl-5 font-size-15 border-right-0 height-40 border-width-2 rounded-left-pill border-primary"
+                                        name="email" id="searchproduct-item" placeholder="ابحث عن المنتج الذي تريده"
+                                        aria-label="Search for products" aria-describedby="searchProduct1" required>
+                                    <div class="input-group-append">
+                                        <!-- Select -->
+                                        <select
+                                            class="js-select selectpicker dropdown-select custom-search-categories-select"
+                                            data-style="btn height-40 text-gray-60 font-weight-normal border-top border-bottom border-left-0 rounded-0 border-primary border-width-2 pl-0 pr-5 py-2">
+                                            <option value="one" selected>كل الاقسام</option>
+                                            <option value="two">الهواتف</option>
+                                            <option value="three">شاشات</option>
+                                            <option value="four">اجهزة الكترونية</option>
+                                        </select>
+                                        <!-- End Select -->
+                                        <button class="btn btn-primary height-40 py-2 px-3 rounded-right-pill"
+                                            type="button" id="searchProduct1">
+                                            <span class="ec ec-search font-size-24"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- End Search Bar -->
+                        <!-- Header Icons -->
+                        <div class="col col-xl-auto text-right text-xl-left pl-0 pl-xl-3 position-static">
+                            <div class="d-inline-flex">
+                                <ul class="d-flex list-unstyled mb-0 custom-w">
+                                    <li>
+                                        <a href="javascript:;" class="text-gray-90 u-header-topbar__nav-link">
+                                            English
+                                        </a>
+                                    </li>
+                                    <!-- Search -->
+                                    <li class="col d-xl-none position-static">
+                                        <a id="searchClassicInvoker"
+                                            class="font-size-22 text-gray-90 text-lh-1 btn-text-secondary"
+                                            href="javascript:;" role="button" aria-controls="searchClassic" aria-haspopup="true"
+                                            aria-expanded="false" data-unfold-target="#searchClassic"
+                                            data-unfold-type="css-animation" data-unfold-duration="300"
+                                            data-unfold-delay="300" data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                                            <span class="ec ec-search"></span>
+                                        </a>
+
+                                        <!-- Input -->
+                                        <div id="searchClassic"
+                                            class="dropdown-menu dropdown-unfold dropdown-menu-right left-0 mx-2"
+                                            aria-labelledby="searchClassicInvoker">
+                                            <form class="js-focus-state input-group px-3">
+                                                <input class="form-control" type="search" placeholder="ابحث هنا">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary px-3" type="button"><i
+                                                            class="font-size-18 ec ec-search"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- End Input -->
+                                    </li>
+                                    <!-- End Search -->
+                                    <li class="col">
+                                        <a href="login.html" role="button" class="u-header-topbar__nav-link login">
+                                            <i class="ec ec-user mr-1"></i> <span>تسجيل الدخول</span>
+                                        </a>
+                                    </li>
+                                    <li class="col cart-div">
+                                        <a href="cart.html" class="text-gray-90 position-relative d-flex"
+                                            data-toggle="tooltip" data-placement="top" title="السلة">
+                                            <i class="font-size-22 ec ec-shopping-bag"></i>
+                                            <span
+                                                class="width-22 height-22 bg-primary position-absolute d-flex align-items-center justify-content-center rounded-circle left-12 top-8 font-weight-bold font-size-12 bg-lg-down-black">2</span>
+                                            <span
+                                                class="d-none d-xl-block font-weight-bold font-size-16 text-gray-90 ml-3">1500
+                                                ر.س</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Header Icons -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Logo-Search-header-icons -->
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+        <div class="breadcrumb-div">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb flex-nowrap flex-xl-wrap overflow-auto overflow-xl-visble">
+                            <li class="breadcrumb-item flex-shrink-0 flex-xl-shrink-1"><a href="index.html">الرئيسية</a></li>
+                            <li class="breadcrumb-item flex-shrink-0 flex-xl-shrink-1 active" aria-current="page">العنوان</li>
+                        </ol>
+                    </nav>
+                </div>
+        </div>
+
+        
+        <div class="container mb-8">
+            <div class="mb-4 mt-4">
+                <h1 class="text-center">العنوان</h1>
+            </div>
+                <div class="row flex-rev">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="menu-side-page">
+                            <ul>
+                                <li>
+                                    <a href="my-account.html">
+                                        <i class="fa fa-dashboard"></i>
+                                        لوحة التحكم
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="orders.html">
+                                        <i class="fa fa-cart-arrow-down"></i>
+                                        الطلبات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="address.html" class="active">
+                                        <i class="fa fa-map-marker"></i>
+                                        العناوين
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wishlist.html">
+                                        <i class="fa fa-heart"></i>
+                                        المفضلة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="edit-account.html">
+                                        <i class="fa fa-user"></i>
+                                        تفاصيل الحساب
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="fa fa-sign-out"></i>
+                                        تسجيل الخروج
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 card-custom">
+                        <p class="font-size-16">
+                            العناوين التالية سيتم استخدامها في صفحة إتمام الطلب بشكل افتراضي.</p>
+                            <div class="address-sec">
+                                <div class="address-div">
+                                    <div class="address-details">
+                                        <h3>عنوان الفاتورة</h3>
+                                        <p>عبدالرحمن محمد علي</p>
+                                        <p>9W9W+JQ - Al Safra' - Buraydah - Al Qassim - 52382</p>
+                                        <button type="button" class="btn btn-soft-secondary mb-3 font-weight-normal px-5 px-md-4 px-lg-5 w-md-auto">تعديل العنوان</button>
+                                    </div>
+                                    <div class="edit-address" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- Input -->
+                                                <div class="js-form-message form-group">
+                                                    <label class="form-label">
+                                                        الاسم الاول
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control" name="firstName" placeholder="">
+                                                </div>
+                                                <!-- End Input -->
+                                            </div>
+            
+                                            <div class="col-md-12">
+                                                <!-- Input -->
+                                                <div class="js-form-message form-group">
+                                                    <label class="form-label">
+                                                        الاسم الاخير
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control" name="" placeholder="">
+                                                </div>
+                                                <!-- End Input -->
+                                            </div>                                            
+                                            <div class="col-md-12">
+                                               <!-- Input -->
+                                               <div class="js-form-message form-group">
+                                                <label class="form-label">
+                                                    العنوان
+                                                    <span class="text-danger"></span>
+                                                </label>
+                                                <input type="text" class="form-control" name="" placeholder="">
+                                            </div>
+                                            <!-- End Input -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="button" class="btn btn-primary-dark-w mb-3 font-weight-normal px-5 px-md-4 px-lg-5 w-100 w-md-auto">حفظ</button>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="address-div">
+                                    <div class="address-details">
+                                        <h3>عنوان الفاتورة</h3>
+                                        <p>عبدالرحمن محمد علي</p>
+                                        <p>9W9W+JQ - Al Safra' - Buraydah - Al Qassim - 52382</p>
+                                        <button type="button" class="btn btn-soft-secondary mb-3 font-weight-normal px-5 px-md-4 px-lg-5 w-md-auto">تعديل العنوان</button>
+                                    </div>
+                                    <div class="edit-address" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- Input -->
+                                                <div class="js-form-message form-group">
+                                                    <label class="form-label">
+                                                        الاسم الاول
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control" name="firstName" placeholder="">
+                                                </div>
+                                                <!-- End Input -->
+                                            </div>
+            
+                                            <div class="col-md-12">
+                                                <!-- Input -->
+                                                <div class="js-form-message form-group">
+                                                    <label class="form-label">
+                                                        الاسم الاخير
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control" name="" placeholder="">
+                                                </div>
+                                                <!-- End Input -->
+                                            </div>                                            
+                                            <div class="col-md-12">
+                                               <!-- Input -->
+                                               <div class="js-form-message form-group">
+                                                <label class="form-label">
+                                                    العنوان
+                                                    <span class="text-danger"></span>
+                                                </label>
+                                                <input type="text" class="form-control" name="" placeholder="">
+                                            </div>
+                                            <!-- End Input -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="button" class="btn btn-primary-dark-w mb-3 font-weight-normal px-5 px-md-4 px-lg-5 w-100 w-md-auto">حفظ</button>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-top">
+            <div class="container mt-1">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="mb-6">
+                            <a href="#" class="d-inline-block">
+                                <img class="logo-footer" src="../assets/img/logo-icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="mb-4">
+                            <div class="row no-gutters">
+                                <div class="col-auto">
+                                    <i class="ec ec-support text-primary font-size-56"></i>
+                                </div>
+                                <div class="col pl-3">
+                                    <div class="font-size-13 font-weight-light">اي استفسار ؟ اتصل بنا 24/7!</div>
+                                    <a href="tel:+80080018588" class="font-size-20 text-gray-90">(800) 8001-8588, </a><a
+                                        href="tel:+0600874548" class="font-size-20 text-gray-90">(0600) 874 548</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h6 class="mb-1 font-weight-bold">العنوان</h6>
+                            <address class="">
+                                القصيم - بريدة - السعودية
+                            </address>
+                        </div>
+                        <div class="my-4 my-md-4">
+                            <ul class="list-inline mb-0 opacity-7">
+                                <li class="list-inline-item mr-0">
+                                    <a class="btn font-size-20 btn-icon btn-soft-dark btn-bg-transparent rounded-circle"
+                                        href="#">
+                                        <span class="fa fa-facebook-f btn-icon__inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <a class="btn font-size-20 btn-icon btn-soft-dark btn-bg-transparent rounded-circle"
+                                        href="#">
+                                        <span class="fa fa-google btn-icon__inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <a class="btn font-size-20 btn-icon btn-soft-dark btn-bg-transparent rounded-circle"
+                                        href="#">
+                                        <span class="fa fa-twitter btn-icon__inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <a class="btn font-size-20 btn-icon btn-soft-dark btn-bg-transparent rounded-circle"
+                                        href="#">
+                                        <span class="fa fa-github btn-icon__inner"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <h6 class="mb-3 font-weight-bold">الاقسام</h6>
+                                <!-- List Group -->
+                                <ul
+                                    class="list-group list-group-flush list-group-borderless mb-0 list-group-transparent">
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">الكمبيوتر
+                                            واللاب توب</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">الكاميرا
+                                            والصور</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">الهواتف
+                                            والتابلت</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">الفيديو
+                                            والالعاب</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">الشاشات
+                                            والصوت</a></li>
+                                    <li><a class="list-group-item list-group-item-action"
+                                            href="products.html">الادوات</a>
+                                    </li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">مستلزمات
+                                            السيارات</a></li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <!-- List Group -->
+                                <ul
+                                    class="list-group list-group-flush list-group-borderless mb-0 list-group-transparent mt-md-6">
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">الطابعات
+                                            والاحبار</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">برمجة</a>
+                                    </li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">اللوازم
+                                            المكتبية
+                                        </a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="products.html">مكونات
+                                            الكمبيوتر</a></li>
+                                    <li><a class="list-group-item list-group-item-action"
+                                            href="products.html">اكسسوارات</a>
+                                    </li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <h6 class="mb-3 font-weight-bold">تسوق معنا</h6>
+                                <!-- List Group -->
+                                <ul
+                                    class="list-group list-group-flush list-group-borderless mb-0 list-group-transparent">
+                                    <li><a class="list-group-item list-group-item-action"
+                                            href="my-account.html">حسابي</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="track-order.html">تتبع
+                                            الطلب</a></li>
+                                    <li><a class="list-group-item list-group-item-action"
+                                            href="wishlist.html">المفضلة</a></li>
+
+                                    <li><a class="list-group-item list-group-item-action"
+                                            href="terms-and-conditions.html">المساعدة</a></li>
+                                    <li><a class="list-group-item list-group-item-action"
+                                            href="address.html">عناوينك</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="contact-us.html">تواصل
+                                            معنا</a></li>
+                                    <li><a class="list-group-item list-group-item-action"
+                                            href="terms-and-conditions.html">شروط الاستخدام</a></li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="flex-center-between d-block d-md-flex">
+                    <div class="mb-2 mb-md-0">© <a href="#" class="font-weight-bold text-gray-90">Shopingo</a> - كل
+                        الحقوق محفوظة</div>
+                    <div class="text-md-right">
+                        <span class="d-inline-block bg-white border rounded p-1">
+                            <img class="max-width-5" src="../assets/img/100X60/img1.jpg" alt="Image Description">
+                        </span>
+                        <span class="d-inline-block bg-white border rounded p-1">
+                            <img class="max-width-5" src="../assets/img/100X60/img2.jpg" alt="Image Description">
+                        </span>
+                        <span class="d-inline-block bg-white border rounded p-1">
+                            <img class="max-width-5" src="../assets/img/100X60/img3.jpg" alt="Image Description">
+                        </span>
+                        <span class="d-inline-block bg-white border rounded p-1">
+                            <img class="max-width-5" src="../assets/img/100X60/img4.jpg" alt="Image Description">
+                        </span>
+                        <span class="d-inline-block bg-white border rounded p-1">
+                            <img class="max-width-5" src="../assets/img/100X60/img5.jpg" alt="Image Description">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+ <!-- ========== HEADER SIDEBAR ========== -->
+ <aside id="sidebarHeader1" class="u-sidebar u-sidebar--left" aria-labelledby="sidebarHeaderInvokerMenu">
+    <div class="u-sidebar__scroller">
+        <div class="u-sidebar__container">
+            <div class="u-header-sidebar__footer-offset pb-0">
+                <!-- Toggle Button -->
+                <div class="position-absolute top-0 right-0 z-index-2 pt-4 pr-4">
+                    <button type="button" class="close ml-auto" aria-controls="sidebarHeader" aria-haspopup="true"
+                        aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false"
+                        data-unfold-target="#sidebarHeader1" data-unfold-type="css-animation"
+                        data-unfold-animation-in="fadeInLeft" data-unfold-animation-out="fadeOutLeft"
+                        data-unfold-duration="500">
+                        <span aria-hidden="true"><i class="ec ec-close-remove text-gray-90 font-size-20"></i></span>
+                    </button>
+                </div>
+                <!-- End Toggle Button -->
+
+                <!-- Content -->
+                <div class="js-scrollbar u-sidebar__body">
+                    <div id="headerSidebarContent" class="u-sidebar__content u-header-sidebar__content">
+                        <!-- Logo -->
+                        <a class="d-flex ml-0 navbar-brand u-header__navbar-brand u-header__navbar-brand-vertical"
+                            href="index.html" aria-label="Electro">
+                            <img src="../assets/img/logo-icon.png" alt="">
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- List -->
+                        <ul id="headerSidebarList" class="u-header-collapse__nav">
+                            <!-- Home Section -->
+                            <li class="u-has-submenu u-header-collapse__submenu">
+                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer"
+                                    href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="headerSidebarHomeCollapse"
+                                    data-target="#headerSidebarHomeCollapse">
+                                    اجهزة الكمبيوتر وملحقاتها
+                                </a>
+
+                                <div id="headerSidebarHomeCollapse" class="collapse"
+                                    data-parent="#headerSidebarContent">
+                                    <ul id="headerSidebarHomeMenu" class="u-header-collapse__nav-list">
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">الكمبيوتر</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">اللاب توب</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">ملحقات الكمبيوتر</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- End Home Section -->
+
+                            <!-- Shop Pages -->
+                            <li class="u-has-submenu u-header-collapse__submenu">
+                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer"
+                                    href="javascript:;" data-target="#headerSidebarPagesCollapse" role="button"
+                                    data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="headerSidebarPagesCollapse">
+                                    الكاميرات والمراقبة
+                                </a>
+
+                                <div id="headerSidebarPagesCollapse" class="collapse"
+                                    data-parent="#headerSidebarContent">
+                                    <ul id="headerSidebarPagesMenu" class="u-header-collapse__nav-list">
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">المراقبة الأمنية</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">عدسات</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">كاميرات الفيديو</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- End Shop Pages -->
+
+                            <li class="u-has-submenu u-header-collapse__submenu">
+                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer"
+                                    href="javascript:;" data-target="#headerSidebarBlogCollapse" role="button"
+                                    data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="headerSidebarBlogCollapse">
+                                    الهواتف والتابلت
+                                </a>
+
+                                <div id="headerSidebarBlogCollapse" class="collapse"
+                                    data-parent="#headerSidebarContent">
+                                    <ul id="headerSidebarBlogMenu" class="u-header-collapse__nav-list">
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">المراقبة الأمنية</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">عدسات</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">كاميرات الفيديو</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- End Product Categories -->
+
+                            <!-- Single Product Pages -->
+                            <li class="u-has-submenu u-header-collapse__submenu">
+                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer"
+                                    href="javascript:;" data-target="#headerSidebarShopCollapse" role="button"
+                                    data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="headerSidebarShopCollapse">
+                                    الشاشات والصوت
+                                </a>
+
+                                <div id="headerSidebarShopCollapse" class="collapse"
+                                    data-parent="#headerSidebarContent">
+                                    <ul id="headerSidebarShopMenu" class="u-header-collapse__nav-list">
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">المراقبة الأمنية</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">عدسات</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">كاميرات الفيديو</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- End Single Product Pages -->
+
+                            <!-- Ecommerce Pages -->
+                            <li class="u-has-submenu u-header-collapse__submenu">
+                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer"
+                                    href="javascript:;" data-target="#headerSidebarDemosCollapse" role="button"
+                                    data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="headerSidebarDemosCollapse">
+                                    الساعات والنظارات
+                                </a>
+
+                                <div id="headerSidebarDemosCollapse" class="collapse"
+                                    data-parent="#headerSidebarContent">
+                                    <ul id="headerSidebarDemosMenu" class="u-header-collapse__nav-list">
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">المراقبة الأمنية</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">عدسات</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">كاميرات الفيديو</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- End Ecommerce Pages -->
+
+                            <!-- Shop Columns -->
+                            <li class="u-has-submenu u-header-collapse__submenu">
+                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer"
+                                    href="javascript:;" data-target="#headerSidebardocsCollapse" role="button"
+                                    data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="headerSidebardocsCollapse">
+                                    مستلزمات السيارات
+                                </a>
+
+                                <div id="headerSidebardocsCollapse" class="collapse"
+                                    data-parent="#headerSidebarContent">
+                                    <ul id="headerSidebardocsMenu" class="u-header-collapse__nav-list">
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">المراقبة الأمنية</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">عدسات</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">كاميرات الفيديو</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- End Shop Columns -->
+
+                            <!-- Blog Pages -->
+                            <li class="u-has-submenu u-header-collapse__submenu">
+                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer"
+                                    href="javascript:;" data-target="#headerSidebarblogsCollapse" role="button"
+                                    data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="headerSidebarblogsCollapse">
+                                   الطابعات والاحبار
+                                </a>
+
+                                <div id="headerSidebarblogsCollapse" class="collapse"
+                                    data-parent="#headerSidebarContent">
+                                    <ul id="headerSidebarblogsMenu" class="u-header-collapse__nav-list">
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">المراقبة الأمنية</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">عدسات</a>
+                                        </li>
+                                        <li>
+                                            <a class="u-header-collapse__submenu-nav-link" href="products.html">كاميرات الفيديو</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- End Blog Pages -->
+                        </ul>
+                        <!-- End List -->
+                    </div>
+                </div>
+                <!-- End Content -->
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- ========== END HEADER SIDEBAR ========== -->
+
+
+
+<!-- Go to Top -->
+<a class="js-go-to u-go-to" href="#" data-position='{"bottom": 15, "right": 15 }' data-type="fixed"
+    data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+    <span class="fa fa-arrow-up u-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="../assets/vendor/appear.js"></script>
+<script src="../assets/vendor/jquery.countdown.min.js"></script>
+<script src="../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+<script src="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="../assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="../assets/vendor/typed.js/lib/typed.min.js"></script>
+<script src="../assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+<!-- JS Electro -->
+<script src="../assets/js/hs.core.js"></script>
+<script src="../assets/js/components/hs.countdown.js"></script>
+<script src="../assets/js/components/hs.header.js"></script>
+<script src="../assets/js/components/hs.hamburgers.js"></script>
+<script src="../assets/js/components/hs.unfold.js"></script>
+<script src="../assets/js/components/hs.focus-state.js"></script>
+<script src="../assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="../assets/js/components/hs.validation.js"></script>
+<script src="../assets/js/components/hs.fancybox.js"></script>
+<script src="../assets/js/components/hs.onscroll-animation.js"></script>
+<script src="../assets/js/components/hs.quantity-counter.js"></script>
+<script src="../assets/js/components/hs.range-slider.js"></script>
+<script src="../assets/js/components/hs.show-animation.js"></script>
+<script src="../assets/js/components/hs.svg-injector.js"></script>
+<script src="../assets/js/components/hs.go-to.js"></script>
+<script src="../assets/js/components/hs.selectpicker.js"></script>
+
+<script>
+    $("#sidebarfilter").click(function () {
+        $(".filter-sec").addClass('active');
+        $(".overlay-div").addClass('active');
+    });
+    $(".overlay-div").click(function () {
+        $(".filter-sec").removeClass('active');
+        $(".overlay-div").removeClass('active');
+    });
+</script>
+
+<script>
+    $('#sliderSyncingNav').slick({
+        rtl:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '#sliderSyncingThumb'
+    });
+    $('#sliderSyncingThumb').slick({
+        rtl:true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '#sliderSyncingNav',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }
+        ]
+    });
+</script>
+
+<script>
+    $('.js-slick-carousel').slick({
+        infinite: false,
+        rtl:true,
+        speed: 300,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        nextArrow: '<i class="fa fa-chevron-right next"></i>',
+        prevArrow: '<i class="fa fa-chevron-left prev"></i>',
+        responsive: [{
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+</script>
+
+<script>
+    $('.slick-banner').slick({
+        infinite: true,
+        rtl:true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true,
+    });
+</script>
+
+<!-- JS Plugins Init. -->
+<script>
+    $(window).on('load', function () {
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+            event: 'hover',
+            direction: 'horizontal',
+            pageContainer: $('.container'),
+            breakpoint: 1199.98,
+            hideTimeOut: 0
+        });
+
+        // initialization of svg injector module
+        $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#header'));
+
+        // initialization of animation
+        $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+        // initialization of unfold component
+        $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+            afterOpen: function () {
+                $(this).find('input[type="search"]').focus();
+            }
+        });
+
+        // initialization of popups
+        $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+        // initialization of countdowns
+        var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+            yearsElSelector: '.js-cd-years',
+            monthsElSelector: '.js-cd-months',
+            daysElSelector: '.js-cd-days',
+            hoursElSelector: '.js-cd-hours',
+            minutesElSelector: '.js-cd-minutes',
+            secondsElSelector: '.js-cd-seconds'
+        });
+
+        // initialization of malihu scrollbar
+        $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+        // initialization of forms
+        $.HSCore.components.HSFocusState.init();
+
+        // initialization of form validation
+        $.HSCore.components.HSValidation.init('.js-validate', {
+            rules: {
+                confirmPassword: {
+                    equalTo: '#signupPassword'
+                }
+            }
+        });
+
+        // initialization of show animations
+        $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+        // initialization of forms
+        $.HSCore.components.HSRangeSlider.init('.js-range-slider');
+
+        // initialization of quantity counter
+        $.HSCore.components.HSQantityCounter.init('.js-quantity');
+
+        // initialization of fancybox
+        $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of hamburgers
+        $.HSCore.components.HSHamburgers.init('#hamburgerTrigger');
+
+        // initialization of unfold component
+        $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+            beforeClose: function () {
+                $('#hamburgerTrigger').removeClass('is-active');
+            },
+            afterClose: function () {
+                $('#headerSidebarList .collapse.show').collapse('hide');
+            }
+        });
+
+        $('#headerSidebarList [data-toggle="collapse"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = $(this).data('target');
+
+            if ($(this).attr('aria-expanded') === "true") {
+                $(target).collapse('hide');
+            } else {
+                $(target).collapse('show');
+            }
+        });
+
+        // initialization of unfold component
+        $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+        // initialization of select picker
+        $.HSCore.components.HSSelectPicker.init('.js-select');
+    });
+</script>
+</body>
+
+</html>

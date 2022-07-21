@@ -1,0 +1,106 @@
+
+
+@font-face {
+  font-family: 'cl-jeet';
+  src: url("cl-jeet.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.cl {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cl-jeet' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cl-mail-envelope-closed:before {
+  content: "\e904";
+}
+.cl-mail-envelope-closed1:before {
+  content: "\e910";
+}
+.cl-search:before {
+  content: "\e900";
+}
+.cl-search2:before {
+  content: "\e901";
+}
+.cl-location:before {
+  content: "\e911";
+}
+.cl-eye:before {
+  content: "\e902";
+}
+.cl-bubble:before {
+  content: "\e914";
+}
+.cl-paperplane:before {
+  content: "\e915";
+}
+.cl-shop:before {
+  content: "\e913";
+}
+.cl-search1:before {
+  content: "\e903";
+}
+.cl-chevron-thin-right:before {
+  content: "\e905";
+}
+.cl-chevron-thin-left:before {
+  content: "\e906";
+}
+.cl-paper-plane:before {
+  content: "\e916";
+}
+.cl-shopping-basket:before {
+  content: "\e90f";
+}
+.cl-heart-o:before {
+  content: "\e907";
+}
+.cl-clock:before {
+  content: "\e912";
+}
+.cl-plus:before {
+  content: "\e908";
+}
+.cl-user-check:before {
+  content: "\e909";
+}
+.cl-user-plus:before {
+  content: "\e90a";
+}
+.cl-user:before {
+  content: "\e90b";
+}
+.cl-shopping-cart:before {
+  content: "\e90c";
+}
+.cl-phone:before {
+  content: "\e90d";
+}
+.cl-th-large-outline:before {
+  content: "\e90e";
+}
+.cl-clock1:before {
+  content: "\e94e";
+}
+.cl-clock2:before {
+  content: "\e94f";
+}
+.cl-bubbles3:before {
+  content: "\e96f";
+}
+.cl-bubbles4:before {
+  content: "\e970";
+}
