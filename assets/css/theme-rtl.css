@@ -7632,9 +7632,10 @@ input[type="button"].btn-block {
 
 .breadcrumb-item+.breadcrumb-item::before {
   display: inline-block;
-  padding-left: 1rem;
+  padding-right: 1rem;
   color: #333e48;
   content: "e";
+  transform: rotate(180deg);
 }
 
 .breadcrumb-item+.breadcrumb-item:hover::before {
@@ -37650,7 +37651,6 @@ blockquote:not(.blockquote) p {
 ------------------------------------*/
 .link__icon i {
   color: #fff;
-  margin-top: 2px;
   font-size: 0.938rem;
 }
 
@@ -38594,7 +38594,7 @@ blockquote:not(.blockquote) p {
 
 .breadcrumb-item+.breadcrumb-item::before {
   font-family: "font-electro";
-  margin-top: 2px;
+  margin-top: -3px;
 }
 
 .breadcrumb-item+.breadcrumb-item a {}
@@ -42614,6 +42614,26 @@ footer {
     content: "\f054";
 }
 
+.text-right {
+  text-align: left !important;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+  text-align: right;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner {
+  padding-right: 0;
+}
+
+.bootstrap-select .dropdown-toggle::after {
+  float: left;
+}
+
+.bootstrap-select .dropdown-menu {
+  width: max-content;
+}
+
 /* abdo responsive */
 
 @media (max-width:1200px) {
@@ -42635,7 +42655,7 @@ footer {
   top: 0;
   right: 0;
   padding: 15px;
-  max-height: 100vh;
+  height: 100vh;
   overflow: auto;
   border-left: 1px solid #ddd;
   width: 230px;
